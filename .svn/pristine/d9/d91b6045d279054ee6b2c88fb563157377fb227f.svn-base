@@ -1,0 +1,36 @@
+server:
+  port: 52000
+
+#redis
+spring: 
+  redis:
+    host: 120.76.190.155 
+    database: 0
+    port: 16379
+    password: yczw20170214 
+    timeout: 6000
+    clientname: sim
+    pool:
+      max-idle: 5
+      min-idle: 0
+      max-active: 50
+      max-wait: -1
+
+#mongodb
+  data: 
+    mongodb:
+      port: 27017
+      host: 120.76.190.155
+      database: car_device
+  
+#log
+logging: 
+   level:
+     org: 
+     springframework: ERROR
+
+#security
+security:
+  oauth2:
+    resource:
+      filter-order: 3
